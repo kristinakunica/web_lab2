@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News2</title>
+	<meta charset="UTF-8">
+    <link href="css/stylearticle.css" rel="stylesheet" type="text/css">
+	<script src="controller.js"></script>
+    <script src="model.js"></script>
+	<script src="view.js"></script>
+</head>
+
+<body>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			showCom();
+			});
+
+	</script>
+	<header>
+		<h1>News Digest 27.03.2023: What Awaits the Igor Sikorsky Kyiv Polytechnic Institute in the Near Future</h1>
+		<p>Date: May 2, 2023</p>
+	</header>
+
+	<main>
+		<img src="image/campus.jpeg" alt="Campus">
+		<p>The university is preparing for the transition to mixed education. Campus shelters are equipped with electricity, fire safety systems and everything necessary; lists of specialties that will have face-to-face classes are being drawn up.<br> <br> 
+        Igor Sikorsky Kyiv Polytechnic Institute information resources will gradually move to the cloud. Currently, the administration is developing protocols for the platforms to transfer data storage to the cloud.<br> <br> 
+        As the spring rolls around, the campus comes alive. A number of events are planned on the campus: a student at-home concert with fundraising for the Armed Forces of Ukraine, planting trees in the territory, the Youth for Peace campaign on the Day of Remembrance and Reconciliation.<br> <br> 
+        Employees of the Igor Sikorsky Kyiv Polytechnic Institute undergo training on the integration of internally displaced people from all over Ukraine into the community.<br> <br> 
+		</p>
+	</main>
+
+	<footer>
+		<div id="comArea">
+			<p>Comments</p>
+		</div>
+		
+		<form onsubmit="saveCom();">
+			<label for="name">Your name:</label>
+			<input type="text" id="name" name="name" required>
+	
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+	
+			<label for="comment">Your comment:</label>
+			<textarea id="comment" name="comment" required></textarea>
+	
+			<button type="submit">Send</button>
+			</form>
+	</footer>
+</body>
+</html>

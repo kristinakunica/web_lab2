@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News3</title>
+	<meta charset="UTF-8">
+    <link href="css/stylearticle.css" rel="stylesheet" type="text/css">
+	<script src="controller.js"></script>
+    <script src="model.js"></script>
+	<script src="view.js"></script>
+</head>
+
+<body>
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			showCom();
+			});
+
+	</script>
+	<header>
+		<h1>Educational Programs of the Igor Sikorsky Kyiv Polytechnic Institute Are among the Best in the Worlde</h1>
+		<p>Date: May 2, 2023</p>
+	</header>
+
+	<main>
+		<img src="image/education.jpeg" alt="Education">
+		<p>The 13th ranking of the world's universities by subject — QS World University Ranking by Subject 2023 — has been released.
+           Igor Sikorsky Kyiv Polytechnic Institute is presented in the ranking with six educational programs in two industry categories.<br> <br> 
+
+           Engineering and Technology:<br> <br> 
+
+- Electrical engineering and electronics (rating positions: 301–350)<br> <br> 
+- Computer science and information systems (rating positions: 351–400)<br> <br> 
+- Engineering and mechanics (rating positions: 351–400)<br> <br> 
+- Chemical engineering (rating positions: 351–400)<br> <br> 
+
+Natural Sciences:<br> <br> 
+
+- Materials science (rating positions: 401–420)<br> <br> 
+- Physics and astronomy (rating positions: 551–600) <br> <br> 
+		</p>
+	</main>
+
+	<footer>
+		<div id="comArea">
+			<p>Comments</p>
+		</div>
+		
+		<form onsubmit="saveCom();">
+			<label for="name">Your name:</label>
+			<input type="text" id="name" name="name" required>
+	
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+	
+			<label for="comment">Your comment:</label>
+			<textarea id="comment" name="comment" required></textarea>
+	
+			<button type="submit">Send</button>
+			</form>
+	</footer>
+</body>
+</html>
